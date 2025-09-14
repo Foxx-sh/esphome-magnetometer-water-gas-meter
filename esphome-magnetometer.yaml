@@ -39,9 +39,7 @@ esphome:
       - lambda: App.set_loop_interval(0);
 
 logger:
-  level: INFO
-  logs:
-    qmc5883l: INFO
+
 
 api:
   services:
@@ -266,7 +264,7 @@ i2c:
     scl: ${i2c_scl}
     sda: ${i2c_sda}
     frequency: 400kHz
-    scan: false
+    scan: true
 
 sensor:
   # Holds the magnetic field strength value of x, y, or z depending on the axis template select.
