@@ -39,7 +39,7 @@ esphome:
       - lambda: App.set_loop_interval(0);
 
 logger:
-
+  level: DEBUG
 
 api:
   services:
